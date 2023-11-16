@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { MainComponent } from './components/main/main.component';
 
 @Component({
   selector: 'keep-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<keep-main></keep-main>',
+  standalone:true,
+  imports:[RouterModule,MainComponent]
 })
 export class AppComponent {
-  title = 'demo-keep-clone-standalone-components';
 }
